@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student's Details</title>
+    <style>
+    
+      body {
+        background-color: beige;
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        color: #000000;
+      }
+      form {
+        
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        padding: 40px;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 15px;
+        color: #0d3d4f;
+      }
+      input[type="text"], select {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        font-size: 16px;
+        background-color: #f2f2f2;
+        border: 1px solid #ddd;
+        border-radius: 50px;
+        box-shadow: inset 6px 6px 6px #9ba9b8, inset -6px -6px 6px white;
+      }
+      input[type="password"], select {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        font-size: 16px;
+        background-color: #f2f2f2;
+        border: 1px solid #ddd;
+        border-radius: 50px;
+        box-shadow: inset 6px 6px 6px #9ba9b8, inset -6px -6px 6px white;
+      }
+
+      .logo {
+        display: block;
+        margin: 0 auto;
+        max-width: 200px;
+        margin-bottom: 20px;
+      }
+      button {
+  color: black;
+  margin-top: 20px;
+  background: white#1DA1F2;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px rgb(40, 138, 149);
+  transition: 0.5s;
+}
+button:hover {
+  box-shadow: none;
+}
+
+
+
+    </style>
+  </head>
+  
+<body style="background: radial-gradient(circle,white,green)"  >
+
+    <form style="background-color: #558eaf;" action="display_table.php" method="get">
+        <img class="logo" src="https://cdn.kiit.ac.in/wp-content/uploads/2022/12/KIIT-Logo-Silver-Jubilee-25-Years.png" alt="KIIT University Logo">
+        <h1>Student Details</h1>
+      <label for="name">Student's Roll Number</label>
+      <input type="text" id="name" name="name" placeholder="Enter your roll no." required>
+
+      <label for="rollno">Password</label>
+      <input type="password" id="rollno" name="rollno" placeholder="Enter your password(digit only)"required>
+
+
+      <button type="submit" value="Submit">SUBMIT</button>
+      <button type="reset" value="Cancel">CANCEL</button><br>
+      
+    </form>
+
+  </body>
+</html>
